@@ -1,0 +1,23 @@
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.WriteLine("Calculadora de Números Primos");
+        Console.Write("Digite um número: ");
+        int.TryParse(Console.ReadLine(), out int primo);
+
+        int cont = 0;
+
+        for (int i = 1; i <= primo; i++)
+        {
+            if (primo % i == 0)
+            {
+                cont++;
+            }
+        }
+
+        if (cont == 2)
+        {
+            Console.WriteLine($"O número {primo} é primo");
+        }
+        else
+        {
+            Console.WriteLine($"O número {primo} não é primo");
+        }
