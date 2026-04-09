@@ -1,0 +1,13 @@
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+//variáveis
+int salto, termos, resultado = 0;
+Console.Write("Digite o n° de termos: ");
+int.TryParse(Console.ReadLine()!, out termos);
+Console.Write("Digite o n° do salto: ");
+int.TryParse(Console.ReadLine()!, out salto);
+for (int i = 1; i <= termos; i++)
+{
+    resultado = resultado + salto;
+    Console.Write($"{i}➡️");
+}
+Console.Write("😍❤️");
